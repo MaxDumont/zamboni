@@ -1,20 +1,20 @@
 @import 'lib';
 
 .account-links {
-    text-align: left;
     cursor: pointer;
+    display: none;
     position: absolute;
     right: 3px;
-    z-index: 12;
-    display: none;
+    text-align: left;
     top: 46px;
+    z-index: 12;
     ul {
         background: rgb(43,54,63);
         border-radius: 3px 0 3px 3px;
-        list-style-type: none;
         line-height: 15px;
-        padding: 6px 4px;
+        list-style-type: none;
         margin: 0;
+        padding: 6px 4px;
     }
     li {
         position: relative;
@@ -39,9 +39,9 @@
         a {
             color: @white;
             display: block;
+            padding: 10px 15px;
             text-decoration: none;
             text-shadow: 0 .5px 0 @black;
-            padding: 10px 15px;
             &:hover {
                 .gradientTop(~'rgba(36,45,51,1) 0%, rgba(36,45,51,0.57) 18%, rgba(36,45,51,0) 42%)');
                 color: rgb(26,149,252);
